@@ -1,5 +1,9 @@
 html { 
-    color-scheme: light dark; 
+    color-scheme: light dark;
+    background-color: black;
+}
+* {
+    color: white;
 }
 body { 
     width: 35em; 
@@ -27,4 +31,10 @@ body {
 .links {
     display: flex;
     flex-direction: column;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    background-color: red;
 }
