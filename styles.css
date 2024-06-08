@@ -15,7 +15,7 @@ body {
     display: flex;
 }
 
-#profilepic {
+#rat {
     object-fit: cover;
     width: 150px;
     margin-right: 10px;
