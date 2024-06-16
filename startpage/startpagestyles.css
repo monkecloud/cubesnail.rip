@@ -7,7 +7,9 @@
 }
 
 :root {
-    --background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c2/Glorious-blue-mountain-range.jpg")
+    --background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c2/Glorious-blue-mountain-range.jpg");
+    --widget-width: 200px;
+    --widget-height: 100px;
 }
 
 body{
@@ -22,25 +24,22 @@ body{
     background-image: var(--background-image);
     display: flex;
     justify-content: center; 
-    align-items: stretch;
+    align-items: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    flex-wrap: wrap;
+
 }
 
 .widget {
     background-color: aliceblue;
     opacity: 0.7;
-    height: 200px;
-    width: 400px;
+    height: var(--widget-height);
+    width: var(--widget-width);
+    margin: 10px;
 }
 
-a.button {
-    background-color: white;
-    margin: 0 20px;
-    border: 5px solid white;
-    border-radius: 5px;
-}
 
 
 /*-- CLOCK --*/
@@ -54,4 +53,27 @@ a.button {
 
 #clock {
     font-weight: bold;
+}
+
+/*-- DROPDOWN --*/
+
+
+
+/*-- BUTTONS --*/
+
+#buttonWidget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: none;
+
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+    background-color: aliceblue;
 }
