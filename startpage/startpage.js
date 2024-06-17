@@ -3,13 +3,14 @@ function startTime () {
     let hours = today.getHours();
     let mins = today.getMinutes();
     let secs = today.getSeconds();
-
+    let date = today.toUTCString().match(/^(.*? ){3}/g);
     mins = checkTime(mins);
     secs = checkTime(secs);
-
-  
-    document.getElementById('clock').innerHTML = hours + ":" + mins + ":" + secs;
+    
+    document.getElementById('clock').innerHTML = hours + ":" + mins;
     setTimeout(startTime, 1000);
+
+    document.getElementById('date').innerHTML = date;
 }
 
 function checkTime(i) {
