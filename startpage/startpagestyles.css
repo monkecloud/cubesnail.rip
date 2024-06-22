@@ -1,7 +1,6 @@
 
 *{
     box-sizing: border-box;
-    border: solid 2px red;
     margin: 0;
     padding: 0;
 }
@@ -17,6 +16,7 @@ body{
     overflow: hidden; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 
 #main {
     height: 100vh;
@@ -83,6 +83,10 @@ body{
 
 .dropdownChild {
     width: 50%;
+}
+
+#dropdownWidget a {
+    color: black;
 }
 
 li {
