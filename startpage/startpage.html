@@ -9,35 +9,52 @@
     <title>startpage</title>
 </head>
 <body onload="startTime()">
-    <div id="main">
-        <div id="clockWidget" class="widget">
-            <div id="clock"></div>
-            <div id="greeting">Hiya</div>
-        </div>
-        
-        <div id="buttonWidget" class="widget">
-            <a href=""><div class="button">fdasfd</div></a>
-            <a href=""><div class="button">fdasfd</div></a>
-            <a href=""><div class="button">fdasfd</div></a>
-            <a href=""><div class="button">fdasfd</div></a>
-            <a href=""><div class="button">fdasfd</div></a>
-            <a href=""><div class="button">fdasfd</div></a>
-        </div>
-        
-        <div id="dropdownWidget" class="dropdown widget">
-            <div id="dropdownLeft">
-                <div id="dropdownLeftTitle"></div>
-                <div></div>
+    <div id="main"> 
+        <div id="widgetContainer">
+            <div id="clockWidget" class="widget">
+                <h1 id="clock"></h1>
+                <h2 id="date">Hiya</h2>
             </div>
-            <div id="dropdownRight">
-                <div id="dropdownRightTitle"></div>
+            
+            <div id="buttonWidget" class="widget">
+                <a href="https://mail.google.com/" class="button"><img src="gmail.png"></img></a>
+                <a href="https://drive.google.com/" class="button"><img src="drive.png"></img></a>
+                <a href="" class="button"><div></div></a>
+                <a href="https://www.icloud.com/find" class="button"><img src="phone.png"></img></a>
+                <a href="" class="button"><div>find</div></a>
+                <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/" class="button"><img src="fcc.png"></img></a>
+            </div>
+            
+            <div id="dropdownWidget" class="dropdown widget">
+                <div id="dropdownLeft" class="dropdownChild">
+                    <h2 id="dropdownLeftTitle">Watch</h2>
+                    <ul class="dropdown list">
+                        <li><a href="https://aniwave.to/home">Anime</a></li>
+                        <li><a href="https://www.youtube.com/">Youtube</a></li>
+                        <li><a href="https://www.primevideo.com/">Prime Video</a></li>
+                        <li><a href="https://www.disneyplus.com/hosme">Disney Plus</a></li>
+                        <li><a href="https://fmovies24.to/home">Everything else</a></li>
+                    </ul>
+                </div>
+                <div id="dropdownRight" class="dropdownChild">
+                    <h2 id="dropdownRightTitle">Work</h2>
+                    <ul class="dropdown list">
+                        <li><a href="http://127.0.0.1:5500/startpage/startpage.html" target="_blank">Local</a></li>
+                        <li><a href="https://my.rhinofit.ca/">Rhinofit</a></li>
+                        <li><a href=""></a></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="widget"> date weather</div>
+            <div class="widget"> Weekly watch - front end libraies
 
             </div>
+            <div class="widget"> custom widget</div> 
         </div>
-
-        <div class="widget"></div>
-        <div class="widget"></div>
-        <div class="widget"></div> 
     </div>
 
 </body>

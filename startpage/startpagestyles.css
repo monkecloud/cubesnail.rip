@@ -1,15 +1,14 @@
 
 *{
     box-sizing: border-box;
-    border: solid red 2px;
     margin: 0;
     padding: 0;
 }
 
 :root {
     --background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c2/Glorious-blue-mountain-range.jpg");
-    --widget-width: 200px;
-    --widget-height: 100px;
+    --widget-width: 30%;
+    --widget-height: 40%;
 }
 
 body{
@@ -17,6 +16,7 @@ body{
     overflow: hidden; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 
 #main {
     height: 100vh;
@@ -32,12 +32,26 @@ body{
 
 }
 
+#widgetContainer {
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    justify-content: center; 
+    align-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
 .widget {
     background-color: aliceblue;
     opacity: 0.7;
     height: var(--widget-height);
     width: var(--widget-width);
     margin: 10px;
+    min-width: 300px;
+    border-radius: 15px;
 }
 
 
@@ -48,7 +62,12 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 35px;
+}
+
+#greeting {
+    font-size: 30px;
+    margin-top: 10px;
 }
 
 #clock {
@@ -57,23 +76,51 @@ body{
 
 /*-- DROPDOWN --*/
 
-
-
-/*-- BUTTONS --*/
-
-#buttonWidget {
+#dropdownWidget {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background: none;
 
 }
 
-.button {
-    width: 40px;
-    height: 40px;
+.dropdownChild {
+    width: 50%;
+}
+
+#dropdownWidget a {
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+/*-- BUTTONS --*/
+
+#buttonWidget {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5%;
     padding: 10px;
-    margin: 10px;
+    background: none;
+    align-items: center;
+    justify-items: center;
+}
+
+.button {
+    display: flex;
+    width: 50px;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
     background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+}
+
+.button img{
+    height: 70%;
+    width: 70%;
+}
+
+img {
+    size: auto;
 }
