@@ -80,14 +80,20 @@
     "intendedgrade":"b",
     "setter":"derk",
     "ric":{
+      "risk":2,
+      "intensity":2,
+      "complexity":3
       }
     }
 ,    {
     "color":"pink",
-    "actualgrade":"1",
+    "actualgrade":"0",
     "intendedgrade":"0",
     "setter":"grish",
     "ric":{
+      "risk":3,
+      "intensity":5,
+      "complexity":3
       }
     }
 ,    {
@@ -96,6 +102,9 @@
     "intendedgrade":"na",
     "setter":"derk",
     "ric":{
+      "risk":4,
+      "intensity":3,
+      "complexity":1
       }
     }
 ,    {
@@ -104,11 +113,14 @@
     "intendedgrade":"2",
     "setter":"tiff",
     "ric":{
+      "risk":1,
+      "intensity":4,
+      "complexity":2
       }
     }
 ,    {
     "color":"black",
-    "actualgrade":"2",
+    "actualgrade":"3",
     "intendedgrade":"2",
     "setter":"grish",
     "ric":{
@@ -120,14 +132,20 @@
     "intendedgrade":"3",
     "setter":"tiff",
     "ric":{
+      "risk":3,
+      "intensity":2,
+      "complexity":4
       }
     }
 ,    {
     "color":"wood",
-    "actualgrade":"4",
-    "intendedgrade":"4",
+    "actualgrade":"3",
+    "intendedgrade":"3",
     "setter":"grish",
     "ric":{
+      "risk":4,
+      "intensity":4,
+      "complexity":4
       }
     }
 ,    {
@@ -136,11 +154,14 @@
     "intendedgrade":"5",
     "setter":"derk",
     "ric":{
+      "risk":3,
+      "intensity":3,
+      "complexity":3
       }
     }
 ,    {
     "color":"green",
-    "actualgrade":"6",
+    "actualgrade":"5",
     "intendedgrade":"7",
     "setter":"derk",
     "ric":{
@@ -152,6 +173,9 @@
     "intendedgrade":"proj",
     "setter":"tiff",
     "ric":{
+      "risk":1,
+      "intensity":4,
+      "complexity":4
       }
     }
 ]},
@@ -161,35 +185,47 @@
   "resetbackfill": "backfill",
   "climbs": [
     {
-    "color":"black",
+    "color":"blackR",
     "actualgrade":"0",
     "intendedgrade":"0",
     "setter":"tiff",
     "ric":{
+      "risk":3,
+      "intensity":2,
+      "complexity":4
       }
     }
 ,    {
-    "color":"white",
+    "color":"whiteR",
     "actualgrade":"1",
     "intendedgrade":"1",
     "setter":"tiff",
     "ric":{
+      "risk":2,
+      "intensity":4,
+      "complexity":5
       }
     }
 ,    {
-    "color":"white",
+    "color":"whiteL",
     "actualgrade":"2",
     "intendedgrade":"2",
     "setter":"grish",
     "ric":{
+      "risk":4,
+      "intensity":2,
+      "complexity":3
       }
     }
 ,    {
-    "color":"red",
-    "actualgrade":"2",
+    "color":"redL",
+    "actualgrade":"1",
     "intendedgrade":"2",
     "setter":"tiff",
     "ric":{
+      "risk":2,
+      "intensity":3,
+      "complexity":4
       }
     }
 ,    {
@@ -198,14 +234,20 @@
     "intendedgrade":"proj",
     "setter":"derk",
     "ric":{
+      "risk":3,
+      "intensity":2,
+      "complexity":4
       }
     }
 ,    {
-    "color":"white",
+    "color":"whiteR",
     "actualgrade":"2",
     "intendedgrade":"2",
     "setter":"grish",
     "ric":{
+      "risk":3,
+      "intensity":3,
+      "complexity":3
       }
     }
 ,    {
@@ -214,6 +256,9 @@
     "intendedgrade":"3",
     "setter":"derk",
     "ric":{
+      "risk":1,
+      "intensity":3,
+      "complexity":3
       }
     }
 ,    {
@@ -222,6 +267,9 @@
     "intendedgrade":"4",
     "setter":"grish",
     "ric":{
+      "risk":2,
+      "intensity":3,
+      "complexity":4
       }
     }
 ]},
@@ -236,6 +284,9 @@
     "intendedgrade":"1",
     "setter":"grish",
     "ric":{
+      "risk":1,
+      "intensity":3,
+      "complexity":3
       }
     }
 ,    {
@@ -244,6 +295,9 @@
     "intendedgrade":"1",
     "setter":"tiff",
     "ric":{
+      "risk":1,
+      "intensity":3,
+      "complexity":2
       }
     }
 ,    {
@@ -252,6 +306,9 @@
     "intendedgrade":"2",
     "setter":"tiff",
     "ric":{
+      "risk":2,
+      "intensity":4,
+      "complexity":3
       }
     }
 ,    {
@@ -260,11 +317,14 @@
     "intendedgrade":"2",
     "setter":"jerm",
     "ric":{
+      "risk":4,
+      "intensity":4,
+      "complexity":2
       }
     }
 ,    {
     "color":"red",
-    "actualgrade":"2",
+    "actualgrade":"3",
     "intendedgrade":"2",
     "setter":"derk",
     "ric":{
@@ -657,6 +717,162 @@
     "actualgrade":"7",
     "intendedgrade":"proj",
     "setter":"derk",
+    "ric":{
+      }
+    }
+]},
+  {
+  "date": "20240816",
+  "area": "Slab",
+  "resetbackfill": "Reset",
+  "climbs": [
+    {
+    "color":"Pink",
+    "actualgrade":"B",
+    "intendedgrade":"B",
+    "setter":"Derk",
+    "ric":{
+      }
+    }
+,    {
+    "color":"Orange",
+    "actualgrade":"0",
+    "intendedgrade":"0",
+    "setter":"derk",
+    "ric":{
+      }
+    }
+,    {
+    "color":"PinkR",
+    "actualgrade":"1",
+    "intendedgrade":"1",
+    "setter":"Grish",
+    "ric":{
+      }
+    }
+,    {
+    "color":"Purple",
+    "actualgrade":"2",
+    "intendedgrade":"2",
+    "setter":"Derk",
+    "ric":{
+      }
+    }
+,    {
+    "color":"Yellow",
+    "actualgrade":"3",
+    "intendedgrade":"3",
+    "setter":"Grish",
+    "ric":{
+      }
+    }
+,    {
+    "color":"Black",
+    "actualgrade":"4?",
+    "intendedgrade":"4",
+    "setter":"Derk",
+    "ric":{
+      }
+    }
+,    {
+    "color":"Green",
+    "actualgrade":"5",
+    "intendedgrade":"5",
+    "setter":"grish",
+    "ric":{
+      }
+    }
+]},
+  {
+  "date": "20240823",
+  "area": "slab",
+  "resetbackfill": "backfill",
+  "climbs": [
+    {
+    "color":"Orange",
+    "actualgrade":"0",
+    "intendedgrade":"0",
+    "setter":"derk",
+    "ric":{
+      }
+    }
+,    {
+    "color":"White",
+    "actualgrade":"1-",
+    "intendedgrade":"1",
+    "setter":"derk",
+    "ric":{
+      }
+    }
+,    {
+    "color":"Blue",
+    "actualgrade":"1",
+    "intendedgrade":"1-",
+    "setter":"grish",
+    "ric":{
+      }
+    }
+,    {
+    "color":"Green",
+    "actualgrade":"1+",
+    "intendedgrade":"1+",
+    "setter":"derk",
+    "ric":{
+      }
+    }
+,    {
+    "color":"Blue",
+    "actualgrade":"1",
+    "intendedgrade":"1-",
+    "setter":"grish",
+    "ric":{
+      }
+    }
+,    {
+    "color":"seafoam",
+    "actualgrade":"2",
+    "intendedgrade":"na",
+    "setter":"derk",
+    "ric":{
+      }
+    }
+,    {
+    "color":"red",
+    "actualgrade":"2+",
+    "intendedgrade":"2-",
+    "setter":"tiff",
+    "ric":{
+      }
+    }
+,    {
+    "color":"yellowR",
+    "actualgrade":"3",
+    "intendedgrade":"3",
+    "setter":"grish",
+    "ric":{
+      }
+    }
+,    {
+    "color":"pinkL",
+    "actualgrade":"3",
+    "intendedgrade":"3+",
+    "setter":"tiff",
+    "ric":{
+      }
+    }
+,    {
+    "color":"yellowL",
+    "actualgrade":"5",
+    "intendedgrade":"7",
+    "setter":"grish",
+    "ric":{
+      }
+    }
+,    {
+    "color":"white",
+    "actualgrade":"6",
+    "intendedgrade":"6",
+    "setter":"tiff",
     "ric":{
       }
     }

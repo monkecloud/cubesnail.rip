@@ -1,76 +1,94 @@
-20240607	purple	back	backfill	0	0	tiff 
-20240607	red	back	backfill	1	1	derk
-20240607	yellow	back	backfill	2	2	derk 
-20240607	orange	back	backfill	3	3	derk
-20240607	green	back	backfill	3	3+	tiff
-20240607	orange	back	backfill	4	5	derk
-20240607	seafoam	back	backfill	6-	7+	tiff
-20240607	white	back	backfill	7	proj	grish
-20240621	pink	slab	reset	b	b	derk
-20240621	pink	slab	reset	1	0	grish
-20240621	blue	slab	reset	1	na	derk
-20240621	red	slab	reset	2	2	tiff
-20240621	black	slab	reset	2	2	grish
-20240621	yellow	slab	reset	3	3	tiff
-20240621	wood	slab	reset	4	4	grish
-20240621	orange	slab	reset	4	5	derk
-20240621	green	slab	reset	6	7	derk
-20240621	green	slab	reset	7	proj	tiff
-20240630	black	slab	backfill	0	0	tiff
-20240630	white	slab	backfill	1	1	tiff
-20240630	white	slab	backfill	2	2	grish
-20240630	red	slab	backfill	2	2	tiff
-20240630	purple	slab	backfill	2	proj	derk
-20240630	white	slab	backfill	2	2	grish
-20240630	purple	slab	backfill	3	3	derk
-20240630	seafoam	slab	backfill	5	4	grish
-20240704	pinkR	cave	reset	1	1	grish
-20240704	pinkL	cave	reset	1	1	tiff
-20240704	blue	cave	reset	2	2	tiff
-20240704	orange	cave	reset	2	2	jerm
-20240704	red	cave	reset	2	2	derk
-20240704	black	cave	reset	2	1	grish
-20240704	purpleL	cave	reset	3	3	jerm
-20240704	purpleR	cave	reset	3	3	derk
-20240704	yellow	cave	reset	4	4	jerm
-20240704	greenR	cave	reset	5	5	tiff
-20240704	greenL	cave	reset	7	7+	derk
-20240704	pink	cave	reset	8	proj	grish
-20240712	seafoam	cave	backfill	3-	3	tiff
-20240712	red	cave	backfill	3	3-	derk
-20240712	wood	cave	backfill	3+	3-	grish
-20240712	white	cave	backfill	4-	4-	derk
-20240712	blue	cave	backfill	5	4+	tiff
-20240712	black	cave	backfill	6+	na	grish
-20240712	orange	cave	backfill	9	proj	derk
-20240718	pinkL	front	reset	0	0	derk
-20240718	blueR	front	reset	1	1	grish
-20240718	white	front	reset	1	1+	derk
-20240718	seafoam	front	reset	2	2	derk
-20240718	green	front	reset	3	3	grish
-20240718	blueL	front	reset	4	4	grish
-20240718	purple	front	reset	4+	4	derk
-20240718	purple	front	reset	5-	5	tiff
-20240718	black	front	reset	5-	3	tiff
-20240726	green	front	backfill	1	0	tiff
-20240726	white	front	backfill	2-	2-	derk
-20240726	pink	front	backfill	3-	2+	grish
-20240726	orange	front	backfill	3	3	tiff
-20240726	yellow	front	backfill	6	6	grish
-20240726	redR	front	backfill	proj	8+	tiff
-20240726	redL	front	backfill	9	proj	derk
-20240801	pink	back	reset	b	b	grish
-20240801	white	back	reset	0+	0	derk
-20240801	blueR	back	reset	1	1	derk
-20240801	blueL	back	reset	1-	0	grish
-20240801	seafoam	back	reset	2	2	grish
-20240801	black	back	reset	3	3	derk
-20240801	yellowR	back	reset	4+	4	derk
-20240801	yellowL	back	reset	5+	5	grish
-20240801	red	back	reset	5+	na	grish
-20240809	purple	back	backfill	0	0	grish
-20240809	pink	back	backfill	0	0	grish
-20240809	orange	back	backfill	2	2	grish
-20240809	purple	back	backfill	4	7	derk
-20240809	red	back	backfill	5	na	grish
-20240809	green	back	backfill	7	proj	derk
+20240607	purple	back	backfill	0	0	tiff			
+20240607	red	back	backfill	1	1	derk			
+20240607	yellow	back	backfill	2	2	derk			
+20240607	orange	back	backfill	3	3	derk			
+20240607	green	back	backfill	3	3+	tiff			
+20240607	orange	back	backfill	4	5	derk			
+20240607	seafoam	back	backfill	6-	7+	tiff			
+20240607	white	back	backfill	7	proj	grish			
+20240621	pink	slab	reset	b	b	derk	2	2	3
+20240621	pink	slab	reset	0	0	grish	3	5	3
+20240621	blue	slab	reset	1	na	derk	4	3	1
+20240621	red	slab	reset	2	2	tiff	1	4	2
+20240621	black	slab	reset	3	2	grish			
+20240621	yellow	slab	reset	3	3	tiff	3	2	4
+20240621	wood	slab	reset	3	3	grish	4	4	4
+20240621	orange	slab	reset	4	5	derk	3	3	3
+20240621	green	slab	reset	5	7	derk			
+20240621	green	slab	reset	7	proj	tiff	1	4	4
+20240630	blackR	slab	backfill	0	0	tiff	3	2	4
+20240630	whiteR	slab	backfill	1	1	tiff	2	4	5
+20240630	whiteL	slab	backfill	2	2	grish	4	2	3
+20240630	redL	slab	backfill	1	2	tiff	2	3	4
+20240630	purple	slab	backfill	2	proj	derk	3	2	4
+20240630	whiteR	slab	backfill	2	2	grish	3	3	3
+20240630	purple	slab	backfill	3	3	derk	1	3	3
+20240630	seafoam	slab	backfill	5	4	grish	2	3	4
+20240704	pinkR	cave	reset	1	1	grish	1	3	3
+20240704	pinkL	cave	reset	1	1	tiff	1	3	2
+20240704	blue	cave	reset	2	2	tiff	2	4	3
+20240704	orange	cave	reset	2	2	jerm	4	4	2
+20240704	red	cave	reset	3	2	derk			
+20240704	black	cave	reset	2	1	grish			
+20240704	purpleL	cave	reset	3	3	jerm			
+20240704	purpleR	cave	reset	3	3	derk			
+20240704	yellow	cave	reset	4	4	jerm			
+20240704	greenR	cave	reset	5	5	tiff			
+20240704	greenL	cave	reset	7	7+	derk			
+20240704	pink	cave	reset	8	proj	grish			
+20240712	seafoam	cave	backfill	3-	3	tiff			
+20240712	red	cave	backfill	3	3-	derk			
+20240712	wood	cave	backfill	3+	3-	grish			
+20240712	white	cave	backfill	4-	4-	derk			
+20240712	blue	cave	backfill	5	4+	tiff			
+20240712	black	cave	backfill	6+	na	grish			
+20240712	orange	cave	backfill	9	proj	derk			
+20240718	pinkL	front	reset	0	0	derk			
+20240718	blueR	front	reset	1	1	grish			
+20240718	white	front	reset	1	1+	derk			
+20240718	seafoam	front	reset	2	2	derk			
+20240718	green	front	reset	3	3	grish			
+20240718	blueL	front	reset	4	4	grish			
+20240718	purple	front	reset	4+	4	derk			
+20240718	purple	front	reset	5-	5	tiff			
+20240718	black	front	reset	5-	3	tiff			
+20240726	green	front	backfill	1	0	tiff			
+20240726	white	front	backfill	2-	2-	derk			
+20240726	pink	front	backfill	3-	2+	grish			
+20240726	orange	front	backfill	3	3	tiff			
+20240726	yellow	front	backfill	6	6	grish			
+20240726	redR	front	backfill	proj	8+	tiff			
+20240726	redL	front	backfill	9	proj	derk			
+20240801	pink	back	reset	b	b	grish			
+20240801	white	back	reset	0+	0	derk			
+20240801	blueR	back	reset	1	1	derk			
+20240801	blueL	back	reset	1-	0	grish			
+20240801	seafoam	back	reset	2	2	grish			
+20240801	black	back	reset	3	3	derk			
+20240801	yellowR	back	reset	4+	4	derk			
+20240801	yellowL	back	reset	5+	5	grish			
+20240801	red	back	reset	5+	na	grish			
+20240809	purple	back	backfill	0	0	grish			
+20240809	pink	back	backfill	0	0	grish			
+20240809	orange	back	backfill	2	2	grish			
+20240809	purple	back	backfill	4	7	derk			
+20240809	red	back	backfill	5	na	grish			
+20240809	green	back	backfill	7	proj	derk			
+20240816	Pink	Slab	Reset	B	B	Derk			
+20240816	Orange	Slab	Reset	0	0	derk			
+20240816	PinkR	Slab	Reset	1	1	Grish			
+20240816	Purple	Slab	Reset	2	2	Derk			
+20240816	Yellow	Slab	Reset	3	3	Grish			
+20240816	Black	Slab	Reset	4?	4	Derk			
+20240816	Green	Slab	Reset	5	5	grish			
+20240823	Orange	slab	backfill	0	0	derk			
+20240823	White	slab	backfill	1-	1	derk			
+20240823	Blue	slab	backfill	1	1-	grish			
+20240823	Green	slab	backfill	1+	1+	derk			
+20240823	Blue	slab	backfill	1	1-	grish			
+20240823	seafoam	slab	backfill	2	na	derk			
+20240823	red	slab	backfill	2+	2-	tiff			
+20240823	yellowR	slab	backfill	3	3	grish			
+20240823	pinkL	slab	backfill	3	3+	tiff			
+20240823	yellowL	slab	backfill	5	7	grish			
+20240823	white	slab	backfill	6	6	tiff			
