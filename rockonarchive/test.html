@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D3 Stack Example</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <svg width="600" height="400"></svg>
+
+    <script>
+        const data = [
+            {
+              "date": "20240607",
+              "area": "back",
+              "climbs": [
+                  {"color": "purple", "actualgrade": 0},
+                  {"color": "red", "actualgrade": 1},
+                  {"color": "yellow", "actualgrade": 2}
+              ]
+            },
+            {
+              "date": "20240621",
+              "area": "slab",
+              "climbs": [
+                  {"color": "pink", "actualgrade": 1},
+                  {"color": "blue", "actualgrade": 2},
+                  {"color": "red", "actualgrade": 3}
+              ]
+            }
+        ];
+
+        // Set up the SVG dimensions
+        const width = 600;
+        const height = 400;
+        const svg = d3.select("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        // List of all colors that could be present
+        const allColors = ["purple", "red", "yellow", "blue", "pink"];
+
+        // Define the stack
+        const stack = d3.stack()
+            .keys(allColors)
+            .value((d, key) => {
+                // Find the climb by color, if undefined return 0
+                const climb = d.climbs.find(c => c.color === key);
+                return climb ? climb.actualgrade : 0;
+            });
+
+        // Process the data for stacking
+        const stackedData = stack(data.map(d => {
+            const result = { date: d.date };
+            // For each color, ensure a grade is present (0 if no climb found)
+            allColors.forEach(color => {
+                const climb = d.climbs.find(c => c.color === color);
+                result[color] = climb ? climb.actualgrade : 0;
+            });
+            return result;
+        }));
+
+        console.log(stackedData);
+
+        // Scales and axes
+        const x = d3.scaleBand()
+            .domain(data.map(d => d.date))
+            .range([0, width])
+            .padding(0.1);
+
+        const y = d3.scaleLinear()
+            .domain([0, d3.max(stackedData, d => d3.max(d, d => d[1]))])
+            .range([height, 0]);
+
+        // Colors for each layer
+        const color = d3.scaleOrdinal(d3.schemeCategory10);
+
+        // Add groups for each stack
+        svg.selectAll(".layer")
+            .data(stackedData)
+            .enter().append("g")
+            .attr("class", "layer")
+            .attr("fill", (d, i) => color(i))
+            .selectAll("rect")
+            .data(d => d)
+            .enter().append("rect")
+            .attr("x", d => x(d.data.date))
+            .attr("y", d => y(d[1]))
+            .attr("height", d => y(d[0]) - y(d[1]))
+            .attr("width", x.bandwidth());
+
+    </script>
+</body>
+</html>

@@ -6,7 +6,7 @@ html {
     color: white;
 }
 body { 
-    width: 35em; 
+    width: 40em; 
     margin: 0 auto;
     margin-top: 10em;
     font-family: Tahoma, Verdana, Arial, sans-serif;
@@ -32,10 +32,46 @@ body {
 .links {
     display: flex;
     flex-direction: column;
+    width: 200px;
 }
 a:link {
     text-decoration: none;
 }
 a:hover {
     background-color: red;
+}
+
+/*construction banner*/
+#divBanner {
+
+    width: 100000px;
+    height: 200px;
+    position: fixed;
+    margin-top: 10em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdff00;
+    opacity: 1;
+    background: repeating-linear-gradient( 45deg, #000000, #000000 20px, #fdff00 20px, #fdff00 100px );
+    /*
+    transform-origin: center;
+    transform: rotate(-15deg);
+    */
+    
+}
+
+#divBannerLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100px;
+    background-color: yellow;
+    color: black;
+    font-size: 50px;
 }
