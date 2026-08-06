@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- FONTS: Gaseok One, Stack Sans Headline, Oxanium, Merienda, Zen Dots, Orbitron -->
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Gasoek+One&family=Holtwood+One+SC&family=Merienda:wght@300..900&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Saira:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Headline:wght@200..700&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&family=Zen+Dots&display=swap" rel="stylesheet">
+    <style>
+        
+        .fulljustify {
+            text-align: justify;
+        }
+        .fulljustify:after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 0%;
+        }
+
+        * {
+            box-sizing: border-box;
+            /*debug 
+            outline: 5px solid blue;  */
+        }
+
+        :root {
+            --primary-width: 95vw; /* global scope */
+        }
+        html {
+            background-color: #E9967A;
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+        body {
+            position: relative;
+            background-image: url('posters.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top-center;
+            background-attachment: fixed;
+            margin: 0;
+            height: 100vh;
+        }
+        body::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+
+        .background-dimension-div {
+            width: 100svw;
+            height: calc((480/311) * 100vw); /*poster dimensions w x h 311 x 480*/
+            /* border: 3px solid red;
+            background-color: rgba(255, 0, 0, 0.2);  Semi-transparent red */
+            overflow: auto; /* Enable scrolling if content overflows */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            /*background-image: url("winner.png");*/
+        }
+
+        .top-border{
+            width: var(--primary-width);
+            height: calc((480/311) * 5vw);
+            background-color: black;
+        }
+        .inside-div{
+            width: var(--primary-width);
+            height: calc((480/311) * 85vw);
+            border-style: solid;
+            border-width: 1vw;
+            border-bottom: 0;
+            display: flex;
+            padding: 5vw;
+            flex-direction: column;
+            position: relative;
+        }
+        .text-main{
+            margin-top: -5vw;
+            margin-bottom: 2vw;
+            font-family: 'Gasoek One';
+            font-size: 15vw;
+            height: 20vw;
+        }
+        .text-main:nth-child(2){
+            font-size: 18vw;
+        }
+        .text-sub{
+            margin-top: 2vw;
+            background-color: black;
+            font-family: "Saira";
+            color: #FF0028;
+            font-size: 7vw;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            justify-content: right;
+        }
+        .date{
+            margin-top: 2vw;
+            font-size: 6vw;
+            font-family: "Stack Sans Headline", sans-serif;
+            font-weight: 700;
+            text-align: center;
+        }
+        .location{
+            margin-right: -5%;
+            font-family: "Saira", sans-serif;
+            font-weight: 700;
+            font-size: 11vw;
+            transform: scaleX(0.8);
+        }
+        .rules{
+        }
+        .rules1{
+              font-size: 2.7vw;
+              font-family: "Saira";
+              font-weight: 500;
+              text-align: center;
+
+        }
+        .rules2{
+            font-family: "Zen Dots";
+            padding-left: 1vw;
+            font-size: 5vw;
+            text-align: center;
+        }
+        .kilterboard{
+            position: absolute;
+            left: 5vw;
+            bottom: 15vw;
+        }
+        .svg{
+            width: 55vw;
+
+        }
+        .people{
+            font-family: Oxanium;
+            display: grid;
+            grid-template-columns: auto auto;
+            align-content: space-evenly;
+            width: 30vw;
+            padding-top: 5vw;
+            font-size: 2.5vw;
+            font-weight: 500;
+        }
+        .bottom-border{
+            font-family: "Zalando Sans Expanded";
+            font-weight: 300;
+            width: var(--primary-width);
+            font-size: 2vw;
+            background-color: black;
+            color: #E9967A;
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    
+    <div class="background-dimension-div">
+        
+        <div class="top-border"></div>
+        <div class="inside-div">
+            <!-- MAIN CONTENT -->
+            
+            <div class="text-main fulljustify">K I L T E R</div>
+            <div class="text-main fulljustify">C O M P</div>
+            <div class="text-sub">FLASH OR DIE</div>
+            <div class="text-date container">
+                <div class="date">SATURDAY<br>
+                    DECEMBER 13TH<br>
+                    7:30PM</div>
+            </div>
+            <div class="container">
+                <div class="location">ROCK ON</div>
+            </div>
+            <div class="container">
+                <div class="rules">
+                    <div class="rules1">30 SECONDS&nbsp;&nbsp;&nbsp;16 PROBLEMS</div>
+                    <div class="rules2">V6-V9</div>
+                </div>
+                
+            </div>
+            <div class="container">
+                <div class="people">
+                    <div class="person">Areeb B</div>
+                    <div class="person">Sam C</div>
+                    <div class="person">Aethne M</div>
+                    <div class="person">Derek L</div>
+                    <div class="person">Sam S</div>
+                    <div class="person">Neil V</div>
+                    <div class="person">Josh K</div>
+                    <div class="person">Sebastian G</div>
+                </div>
+            </div>
+
+            
+            <!-- MAIN CONTENT -->
+
+        </div>
+        <div class="kilterboard">
+                <img class="svg"
+                src="kilter.svg"/>
+            </div>
+        <div class="bottom-border">C U B E S N A I L&nbsp;&nbsp;&nbsp; P R E S E N T S</div>
+    </div>
+</body>
+</html>
