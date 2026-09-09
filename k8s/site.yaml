@@ -1,0 +1,74 @@
+# What actually runs. This file is the source of truth: Flux applies it, so the cluster
+# matches the repo and nothing is configured by hand.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cubesnail-site
+  labels: { app: cubesnail-site }
+spec:
+  replicas: 2
+  selector:
+    matchLabels: { app: cubesnail-site }
+  template:
+    metadata:
+      labels: { app: cubesnail-site }
+    spec:
+      # One replica per node, so losing a node cannot take the app down.
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchLabels: { app: cubesnail-site }
+              topologyKey: kubernetes.io/hostname
+      # The GHCR package is private, so the pull needs credentials. The Secret is applied
+      # from the infra repo, not from here — an app repo holds no credentials.
+      imagePullSecrets:
+        - name: ghcr-creds
+      containers:
+        - name: app
+          # CI rewrites this tag on every push. Never `:latest` — the tag is how rollback
+          # works, and a moving tag means a restarted pod silently changes version.
+          image: ghcr.io/monkecloud/cubesnail.rip:REPLACE-ME
+          ports:
+            - containerPort: 8080
+          # No env: this site talks to nothing. It is the whole point of baking content
+          # into the image.
+          readinessProbe:
+            httpGet: { path: /, port: 8080 }
+            initialDelaySeconds: 2
+            periodSeconds: 10
+          livenessProbe:
+            httpGet: { path: /, port: 8080 }
+            initialDelaySeconds: 10
+            periodSeconds: 20
+          securityContext:
+            runAsNonRoot: true
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop: [ALL]
+            seccompProfile:
+              type: RuntimeDefault
+          resources:
+            requests: { cpu: 20m, memory: 32Mi }
+            limits: { cpu: 200m, memory: 128Mi }
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cubesnail-site
+spec:
+  selector: { app: cubesnail-site }
+  ports:
+    - port: 80
+      targetPort: 8080
+---
+# Required by the two-replica pattern: without it a node drain can take both replicas at
+# once. Drop it if you ever run a single replica, where minAvailable: 1 blocks every drain.
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: cubesnail-site
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels: { app: cubesnail-site }
