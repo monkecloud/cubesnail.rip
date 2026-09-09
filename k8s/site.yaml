@@ -28,7 +28,7 @@ spec:
         - name: app
           # CI rewrites this tag on every push. Never `:latest` — the tag is how rollback
           # works, and a moving tag means a restarted pod silently changes version.
-          image: ghcr.io/monkecloud/cubesnail.rip:REPLACE-ME
+          image: ghcr.io/monkecloud/cubesnail.rip:3893902
           ports:
             - containerPort: 8080
           # No env: this site talks to nothing. It is the whole point of baking content
